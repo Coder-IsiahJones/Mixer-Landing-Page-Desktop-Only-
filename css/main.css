@@ -1,0 +1,331 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+html,
+body {
+  background: #253141;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(37, 49, 65, 0.7) 0%,
+      #253141 80%,
+      #253141 100%
+    ),
+    url("https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+
+header .left-menu {
+  display: flex;
+}
+
+header .left-menu .logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  text-transform: lowercase;
+  background: url("https://sandboxstrat.com/wp-content/uploads/2020/06/mixer-logo.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background-position: 0 center;
+}
+
+header .left-menu .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+header .left-menu .menu a {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+
+header .left-menu .menu a:hover {
+  color: rgb(255, 255, 255, 1);
+}
+
+header .left-menu .menu a .fa {
+  margin-left: 10px;
+}
+
+header .right-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .right-menu .language a {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 0 60px 0 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+
+header .right-menu .language a .fa {
+  margin-left: 10px;
+}
+
+header .right-menu .language a:hover {
+  color: rgb(255, 255, 255, 1);
+}
+
+header .right-menu .signin {
+  background: #0375d5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#featured {
+  padding: 10px 0 0;
+}
+
+#featured .video-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 620px 2fr 1fr;
+  grid-gap: 10px;
+}
+
+#featured .video-section .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#featured .video-section .video .image {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#featured .video-section .video.center {
+  width: 100%;
+  height: 349px;
+}
+
+#featured .video-section .video.center .image {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.05);
+  border: 2px solid #00b4f0;
+  cursor: pointer;
+}
+
+#featured .video-section .video:nth-child(1) .image,
+#featured .video-section .video:nth-child(5) .image {
+  position: relative;
+}
+
+#featured .video-section .video:nth-child(1) .image .arrow {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+#featured .video-section .video:nth-child(1) .image .arrow:hover {
+  background: rgb(0, 0, 0, 0.8);
+}
+
+#featured .video-section .video:nth-child(5) .image .arrow {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+#featured .video-section .video:nth-child(5) .image .arrow:hover {
+  background: rgb(0, 0, 0, 0.8);
+}
+
+#featured .video-section .video:nth-child(1) .image .arrow .fa,
+#featured .video-section .video:nth-child(5) .image .arrow .fa {
+  font-size: 4rem;
+  color: #00b4f0;
+}
+
+#featured .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#featured .dots .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#featured .dots .circles .circle {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#featured .dots .circles .circle .background-color {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+
+#featured .dots .circles .circle:hover .background-color {
+  width: 17px;
+  height: 17px;
+  background: #00b4f0;
+}
+
+#featured .dots .circles .circle.active .background-color {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #00b4f0;
+}
+
+#top-games .games {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+#top-games .games .game {
+  background: url("https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-285x380.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#top-games .games .game:nth-child(2) {
+  background: url("https://static-cdn.jtvnw.net/ttv-boxart/Outriders-285x380.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#top-games .games .game:nth-child(3) {
+  background: url("https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Warzone-285x380.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#top-games .games .game:nth-child(4) {
+  background: url("https://static-cdn.jtvnw.net/ttv-boxart/Valheim-285x380.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#top-games .games .game:nth-child(5) {
+  background: url("https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends-285x380.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#top-games .games .game:nth-child(6) {
+  background: url("https://static-cdn.jtvnw.net/ttv-boxart/Escape%20from%20Tarkov-285x380.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#top-games .games .game .info {
+  background: #253041;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+#top-games .games .game:hover .info {
+  background: #313f55;
+}
+
+#top-games .games .game .info .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#top-games .games .game .info .views {
+  font-weight: 300;
+  color: #8c919d;
+  font-size: 0.9rem;
+}
+
+#top-games .games .game .info .views .fa {
+  margin-right: 8px;
+}
